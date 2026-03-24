@@ -1,15 +1,13 @@
-# Template
+# Testing Practice
 
-Webpack development environment template.
+Test Driven Development practice with jest.
 
-### Contains
+## Skills Demonstrated
 
-- webpack config files for development and production.
-- npm for package management.
-- npm scripts in `package.json` for common commands.
-- `src` directory for project source code.
-- `.gitignore` file for removing git tracking.
-- `dist` directory for project deployment files.
-- `node_modules` directory for storing npm packages.
-- eslint for linting.
-- prettier for formatting.
+- Using `jest` to auto run test on Javascript code.
+
+- Using jest matchers to unit test.
+
+## Credits
+
+_Project from TOP (The Odin Project)._
