@@ -68,6 +68,7 @@ export default defineConfig([
       "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
       "no-unused-expressions": ["error", { ignoreDirectives: true }],
       "dot-notation": ["warn", { allowPattern: "^[a-z]+(_[a-z]+)+$" }],
+      "prefer-destructuring": ["warn", { object: true, array: false }],
       "no-unsafe-negation": ["error", { enforceForOrderingRelations: true }],
       "no-extra-boolean-cast": ["error", { enforceForInnerExpressions: true }],
       "array-callback-return": [
@@ -83,11 +84,6 @@ export default defineConfig([
         "error",
         "as-needed",
         { requireReturnForObjectLiteral: true },
-      ],
-      "prefer-destructuring": [
-        "warn",
-        { object: true, array: false },
-        { enforceForRenamedProperties: true },
       ],
       "capitalized-comments": [
         "warn",
