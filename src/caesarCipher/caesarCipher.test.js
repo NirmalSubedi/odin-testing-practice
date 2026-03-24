@@ -5,6 +5,20 @@ test("caesarCipher function exists", () => {
   expect(typeof caesarCipher).toBe("function");
 });
 
+test("non-string message throws exception", () => {
+  expect(() => caesarCipher(null, 1)).toThrow(TypeError);
+  expect(() => caesarCipher(null, 1)).toThrow("message to be a string");
+});
+
+test("non-integer shift throws exception", () => {
+  expect(() => caesarCipher("", null)).toThrow(Error);
+  expect(() => caesarCipher("", null)).toThrow("shift to be an integer");
+});
+
+test("empty string returns empty string", () => {
+  expect(caesarCipher("", 1)).toBe("");
+});
+
 test("shifts right", () => {
   expect(caesarCipher("hello", 5)).toBe("mjqqt");
 });

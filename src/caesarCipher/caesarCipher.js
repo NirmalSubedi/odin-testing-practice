@@ -12,6 +12,10 @@ const decodeLetter = (cipheredLetter, shift) => {
 };
 
 export const caesarCipher = (message, shift) => {
+  if (typeof message !== "string")
+    throw new TypeError("Expected message to be a string.");
+  if (!Number.isInteger(shift))
+    throw new Error("Expected shift to be an integer.");
   let result = "";
 
   for (const char of message) {
